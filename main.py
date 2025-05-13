@@ -1,3 +1,6 @@
+def replace_text_numbers(text):
+    return text
+
 def main():
     input_path = "input.txt"
 
