@@ -7,7 +7,9 @@ def main():
     try:
         with open(input_path, "r", encoding="utf-8") as f:
             text = f.read()
-        print("Файл успешно прочитан")
+            print("Файл успешно прочитан")
+            updated_text = replace_text_numbers(text)
+            print("Обработка завершена")
     except FileNotFoundError:
         print(f"Файл {input_path} не найден.")
         return
